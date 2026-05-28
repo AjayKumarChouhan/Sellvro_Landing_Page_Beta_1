@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sellvro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images\favicon.png" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══════════════════════════════════════ -->
+  <nav class="sv-nav" id="svNav">
+    <div class="sv-nav__inner">
+      <a href="#" class="sv-nav__logo">
+        <img width="120px" src="images\logo.png" alt="Sellvro Logo" />
+      </a>
+
+      <div class="sv-nav__search" id="searchWrapper">
+        <svg class="sv-nav__search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M15 15L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" class="sv-nav__search-input" placeholder="Search products, suppliers…" id="navSearch" />
+        <kbd class="sv-nav__search-kbd">⌘K</kbd>
+      </div>
+
+      <ul class="sv-nav__links">
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#wms">WMS</a></li>
+        <li><a href="#why-us">Why Sellvro</a></li>
+        <li><a href="#process">How It Works</a></li>
+      </ul>
+
+      <div class="sv-nav__actions">
+        <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--sm" data-auth="login">Log In</a>
+        <a href="#auth" class="sv-btn sv-btn--primary sv-btn--sm" data-auth="signup">Get Started</a>
+      </div>
+
+      <button class="sv-nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="sv-nav__mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#wms">WMS</a></li>
+        <li><a href="#why-us">Why Sellvro</a></li>
+        <li><a href="#process">How It Works</a></li>
+      </ul>
+      <div class="sv-nav__mobile-actions">
+        <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--full" data-auth="login">Log In</a>
+        <a href="#auth" class="sv-btn sv-btn--primary sv-btn--full" data-auth="signup">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+  <section class="sv-hero" id="hero">
+    <div class="sv-hero__bg-grid"></div>
+    <div class="sv-hero__noise"></div>
+
+    <div class="sv-hero__inner">
+      <div class="sv-hero__badge">
+        <span class="sv-badge sv-badge--orange">New</span>
+        <span>Marketplace + WMS — Now in one platform</span>
+        <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <h1 class="sv-hero__headline">
+        Start, Manage, & <br> Grow with Ease
+        <!-- The Trusted<br />
+        <span class="sv-hero__headline-accent">B2B Commerce</span><br />
+        Infrastructure -->
+      </h1>
+
+      <p class="sv-hero__sub">
+        Sellvro connects verified suppliers with growing businesses through a managed marketplace — eliminating sourcing risk, operational friction, and payment complexity.
+      </p>
+
+      <div class="sv-hero__cta-group">
+        <a href="#auth" class="sv-btn sv-btn--primary sv-btn--lg" data-auth="signup">
+          Start for Free
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#video" class="sv-btn sv-btn--ghost sv-btn--lg sv-btn--play">
+          <span class="sv-btn__play-ring">
+            <svg viewBox="0 0 20 20" fill="none"><polygon points="7,5 15,10 7,15" fill="currentColor"/></svg>
+          </span>
+          Watch Overview
+        </a>
+      </div>
+
+      <div class="sv-hero__stats">
+        <div class="sv-hero__stat">
+          <span class="sv-hero__stat-num">12K+</span>
+          <span class="sv-hero__stat-label">Verified Suppliers</span>
+        </div>
+        <div class="sv-hero__stat-divider"></div>
+        <div class="sv-hero__stat">
+          <span class="sv-hero__stat-num">$480M+</span>
+          <span class="sv-hero__stat-label">GMV Processed</span>
+        </div>
+        <div class="sv-hero__stat-divider"></div>
+        <div class="sv-hero__stat">
+          <span class="sv-hero__stat-num">99.4%</span>
+          <span class="sv-hero__stat-label">Order Accuracy</span>
+        </div>
+        <div class="sv-hero__stat-divider"></div>
+        <div class="sv-hero__stat">
+          <span class="sv-hero__stat-num">60+</span>
+          <span class="sv-hero__stat-label">Cities Covered</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-hero__visual">
+      <div class="sv-hero__dashboard-mock">
+        <div class="sv-mock__bar">
+          <span class="sv-mock__dot sv-mock__dot--red"></span>
+          <span class="sv-mock__dot sv-mock__dot--yellow"></span>
+          <span class="sv-mock__dot sv-mock__dot--green"></span>
+          <span class="sv-mock__bar-title">Sellvro Dashboard</span>
+        </div>
+        <div class="sv-mock__body">
+          <div class="sv-mock__sidebar">
+            <div class="sv-mock__nav-item sv-mock__nav-item--active"></div>
+            <div class="sv-mock__nav-item"></div>
+            <div class="sv-mock__nav-item"></div>
+            <div class="sv-mock__nav-item"></div>
+            <div class="sv-mock__nav-item"></div>
+          </div>
+          <div class="sv-mock__content">
+            <div class="sv-mock__card-row">
+              <div class="sv-mock__kpi">
+                <div class="sv-mock__kpi-label"></div>
+                <div class="sv-mock__kpi-val"></div>
+                <div class="sv-mock__kpi-chart">
+                  <div class="sv-mock__bar-chart">
+                    <div style="height:40%"></div>
+                    <div style="height:65%"></div>
+                    <div style="height:50%"></div>
+                    <div style="height:80%"></div>
+                    <div style="height:70%"></div>
+                    <div style="height:90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="sv-mock__kpi sv-mock__kpi--accent">
+                <div class="sv-mock__kpi-label"></div>
+                <div class="sv-mock__kpi-val"></div>
+                <div class="sv-mock__kpi-trend">
+                  <svg viewBox="0 0 40 20"><polyline points="0,18 10,12 20,14 30,6 40,4" stroke="white" stroke-width="2" fill="none"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="sv-mock__table-head"></div>
+            <div class="sv-mock__table-row"></div>
+            <div class="sv-mock__table-row sv-mock__table-row--alt"></div>
+            <div class="sv-mock__table-row"></div>
+            <div class="sv-mock__table-row sv-mock__table-row--alt"></div>
+          </div>
+        </div>
+      </div>
+      <!-- floating cards -->
+      <div class="sv-hero__float sv-hero__float--order">
+        <div class="sv-float__icon">📦</div>
+        <div class="sv-float__info">
+          <span class="sv-float__title">Order #SV-8821</span>
+          <span class="sv-float__sub">Fulfilled · 2 min ago</span>
+        </div>
+        <span class="sv-badge sv-badge--green">Live</span>
+      </div>
+      <div class="sv-hero__float sv-hero__float--supplier">
+        <div class="sv-float__icon">✅</div>
+        <div class="sv-float__info">
+          <span class="sv-float__title">Supplier Verified</span>
+          <span class="sv-float__sub">AlphaGoods Ltd.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ VIDEO ═══════════════════════════════════════ -->
+  <section class="sv-section sv-video-section" id="video">
+    <div class="container">
+   <div class="sv-section__header sv-section__header--center">
+        <span class="sv-eyebrow">Platform Overview</span>
+        <h2 class="sv-h2">See Sellvro in action</h2>
+        <p class="sv-body-lg sv-muted">From sourcing to fulfillment — watch how Sellvro simplifies every step of B2B commerce.</p>
+      </div> 
+      <div class="sv-video-wrapper">
+        <div class="sv-video-thumbnail" id="videoThumb">
+          <div class="sv-video-thumbnail__overlay">
+            <button class="sv-video-play-btn" id="videoPlayBtn" aria-label="Play video">
+              <span class="sv-video-play-btn__ring"></span>
+              <svg viewBox="0 0 32 32" fill="none"><polygon points="11,8 25,16 11,24" fill="currentColor"/></svg>
+            </button>
+            <div class="sv-video-thumbnail__labels">
+              <span class="sv-badge sv-badge--white">3:42</span>
+              <span class="sv-badge sv-badge--orange">New</span>
+            </div>
+          </div>
+          <div class="sv-video-thumbnail__gradient"></div>
+          <div class="sv-video-thumbnail__bg"></div>
+        </div>
+        <!-- Modal -->
+        <div class="sv-video-modal" id="videoModal">
+          <div class="sv-video-modal__backdrop" id="videoModalBackdrop"></div>
+          <div class="sv-video-modal__inner">
+            <button class="sv-video-modal__close" id="videoModalClose">✕</button>
+            <div class="sv-video-modal__frame">
+              <div class="sv-video-placeholder">
+                <span>🎬</span>
+                <p>Your Sellvro introduction video will play here.</p>
+                <small>Embed your YouTube / Vimeo iframe in place of this placeholder.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ INFLUENCER COLLAB ═══════════════════════════════════════ -->
+<section class="sv-section sv-video-collab" id="marketplace">
+  <div class="sv-video-collab__container">
+    
+    <div class="sv-video-grid-wrapper">
+      
+      <div class="sv-video-track-col sv-track-col--1">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-man-holding-a-smartphone-in-his-hand-40546-large.mp4"></video>
+        </div>
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-woman-working-on-a-laptop-in-a-bright-office-41584-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--2">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-young-man-working-on-a-laptop-in-a-cafe-41578-large.mp4"></video>
+        </div>
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-woman-smiling-at-the-camera-in-a-workspace-41589-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--3">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-man-in-a-suit-working-on-a-laptop-41580-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--4">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-professional-woman-working-in-office-41582-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--5">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-young-businessman-in-office-41591-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--6">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-businesswoman-working-at-her-desk-41587-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--7">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-man-smiling-working-in-a-modern-office-41595-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--8">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-woman-typing-on-a-laptop-keyboard-41585-large.mp4"></video>
+        </div>
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-man-looking-at-financial-charts-on-a-monitor-41593-large.mp4"></video>
+        </div>
+      </div>
+
+      <div class="sv-video-track-col sv-track-col--9">
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-smiling-woman-at-her-office-desk-41588-large.mp4"></video>
+        </div>
+        <div class="sv-video-card-frame">
+          <video autoplay loop muted playsinline src="https://assets.mixkit.co/videos/preview/mixkit-young-man-entering-a-business-meeting-41597-large.mp4"></video>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="sv-video-collab__content">
+      <span class="sv-badge sv-badge--neutral">Testimonials</span>
+      <h2 class="sv-h2">Trusted by leaders<br>from various industries</h2>
+      <p class="sv-body-lg sv-muted">Learn why professionals trust our solutions to complete their customer journeys.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ═══════════════════════════════════════ DEALS ═══════════════════════════════════════ -->
+<!-- 
+  <section class="sv-section sv-deals-section" id="deals">
+    <div class="container">
+      <div class="sv-section">
+        <div class="sv-section__header">
+          <span class="sv-eyebrow sv-eyebrow--orange">Limited Time</span>
+          <h2 class="sv-h2">Today's Best Deals</h2>
+          <p class="sv-body-lg sv-muted">Exclusive bulk pricing on verified products — updated daily for B2B buyers.</p>
+        </div>
+
+        <div class="sv-deals-countdown" id="dealsCountdown">
+          <span class="sv-deals-countdown__label">Deals refresh in</span>
+          <div class="sv-deals-countdown__units">
+            <div class="sv-countdown-unit"><span id="cdHours">08</span><small>hrs</small></div>
+            <div class="sv-countdown-sep">:</div>
+            <div class="sv-countdown-unit"><span id="cdMins">34</span><small>min</small></div>
+            <div class="sv-countdown-sep">:</div>
+            <div class="sv-countdown-unit"><span id="cdSecs">12</span><small>sec</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-deals-grid">
+        
+        <div class="sv-deal-card sv-deal-card--hot">
+          <div class="sv-deal-card__badge-group">
+            <span class="sv-badge sv-badge--orange">Hot Deal</span>
+            <span class="sv-badge sv-badge--dark">-32%</span>
+          </div>
+          <div class="sv-deal-card__img sv-deal-card__img--1"></div>
+          <div class="sv-deal-card__body">
+            <span class="sv-caption sv-muted">Electronics · Bulk</span>
+            <h4 class="sv-h5">Industrial LED Lighting Kit</h4>
+            <div class="sv-deal-card__pricing">
+              <span class="sv-deal-card__price">$48<small>/unit</small></span>
+              <span class="sv-deal-card__original">$71</span>
+            </div>
+            <div class="sv-deal-card__moq">Min. Order: 200 units</div>
+            <div class="sv-deal-card__progress-wrap">
+              <div class="sv-deal-card__progress"><div class="sv-deal-card__progress-fill" style="width:73%"></div></div>
+              <span class="sv-caption sv-muted">73% claimed</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--primary sv-btn--full sv-btn--sm" data-auth="signup">Order Now</a>
+          </div>
+        </div>
+
+        <div class="sv-deal-card">
+          <div class="sv-deal-card__badge-group">
+            <span class="sv-badge sv-badge--blue">Trending</span>
+            <span class="sv-badge sv-badge--dark">-18%</span>
+          </div>
+          <div class="sv-deal-card__img sv-deal-card__img--2"></div>
+          <div class="sv-deal-card__body">
+            <span class="sv-caption sv-muted">Packaging · Wholesale</span>
+            <h4 class="sv-h5">Corrugated Shipping Boxes (500pk)</h4>
+            <div class="sv-deal-card__pricing">
+              <span class="sv-deal-card__price">$0.38<small>/pc</small></span>
+              <span class="sv-deal-card__original">$0.46</span>
+            </div>
+            <div class="sv-deal-card__moq">Min. Order: 500 units</div>
+            <div class="sv-deal-card__progress-wrap">
+              <div class="sv-deal-card__progress"><div class="sv-deal-card__progress-fill sv-deal-card__progress-fill--blue" style="width:41%"></div></div>
+              <span class="sv-caption sv-muted">41% claimed</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Order Now</a>
+          </div>
+        </div>
+
+        <div class="sv-deal-card">
+          <div class="sv-deal-card__badge-group">
+            <span class="sv-badge sv-badge--dark">New Arrival</span>
+            <span class="sv-badge sv-badge--orange">-24%</span>
+          </div>
+          <div class="sv-deal-card__img sv-deal-card__img--3"></div>
+          <div class="sv-deal-card__body">
+            <span class="sv-caption sv-muted">Safety · Industrial</span>
+            <h4 class="sv-h5">PPE Safety Helmet (Bulk Pack)</h4>
+            <div class="sv-deal-card__pricing">
+              <span class="sv-deal-card__price">$6.20<small>/unit</small></span>
+              <span class="sv-deal-card__original">$8.15</span>
+            </div>
+            <div class="sv-deal-card__moq">Min. Order: 100 units</div>
+            <div class="sv-deal-card__progress-wrap">
+              <div class="sv-deal-card__progress"><div class="sv-deal-card__progress-fill" style="width:89%"></div></div>
+              <span class="sv-caption sv-muted">89% claimed</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Order Now</a>
+          </div>
+        </div>
+
+        <div class="sv-deal-card">
+          <div class="sv-deal-card__badge-group">
+            <span class="sv-badge sv-badge--blue">Clearance</span>
+            <span class="sv-badge sv-badge--dark">-40%</span>
+          </div>
+          <div class="sv-deal-card__img sv-deal-card__img--4"></div>
+          <div class="sv-deal-card__body">
+            <span class="sv-caption sv-muted">Office · Supplies</span>
+            <h4 class="sv-h5">Thermal Label Printer Roll (50pk)</h4>
+            <div class="sv-deal-card__pricing">
+              <span class="sv-deal-card__price">$12<small>/roll</small></span>
+              <span class="sv-deal-card__original">$20</span>
+            </div>
+            <div class="sv-deal-card__moq">Min. Order: 50 units</div>
+            <div class="sv-deal-card__progress-wrap">
+              <div class="sv-deal-card__progress"><div class="sv-deal-card__progress-fill sv-deal-card__progress-fill--blue" style="width:60%"></div></div>
+              <span class="sv-caption sv-muted">60% claimed</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-section__footer-cta">
+        <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--lg" data-auth="signup">Browse All Deals
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>  -->
+
+
+
+  <!-- ═══════════════════════════════════════ categories ═══════════════════════════════════════ -->
+
+<section class="sv-section sv-categories-section" id="categories">
+  <div class="container">
+    
+    <div class="sv-section__header text-center">
+      <h2 class="sv-h2">Browser by categories</h2>
+      <p class="sv-body-lg sv-muted">Explore our diverse range of categories tailored to meet your specific needs and interests.</p>
+    </div>
+
+    <div class="sv-bento-grid">
+      
+      <div class="sv-bento-card sv-bento-card--vertical">
+        <div class="sv-bento-card__img-holder">
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80" alt="All Products Collection" class="sv-bento-card__img">
+        </div>
+        <div class="sv-bento-card__content">
+          <h3 class="sv-h3">All Product</h3>
+          <p class="sv-body-sm sv-muted">Discover endless possibilities with our All Products category. Shop now for everything you need in one convenient place.</p>
+          <div class="sv-bento-card__actions">
+            <a href="#" class="sv-btn sv-btn--primary-round">
+              <span>Browse All Products</span>
+              <span class="sv-btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-bento-card sv-bento-card--horizontal">
+        <div class="sv-bento-card__content">
+          <h3 class="sv-h3">Displays</h3>
+          <p class="sv-body-sm sv-muted">Experience crystal-clear clarity and vibrant visuals with our Displays.</p>
+          <div class="sv-bento-card__actions">
+            <a href="#" class="sv-btn sv-btn--secondary-inline">
+              <span>View More</span>
+            </a>
+            <span class="sv-arrow-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="sv-bento-card__img-holder">
+          <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=500&q=80" alt="Displays Category" class="sv-bento-card__img">
+        </div>
+      </div>
+
+      <div class="sv-bento-card sv-bento-card--square">
+        <div class="sv-bento-card__img-holder">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Headphones Category" class="sv-bento-card__img">
+        </div>
+        <div class="sv-bento-card__content">
+          <div class="sv-bento-card__footer-row">
+            <div class="sv-bento-card__text">
+              <h3 class="sv-h4">Headphones</h3>
+              <p class="sv-body-sm sv-muted">Premium headphones: Superior sound, comfort, and style.</p>
+            </div>
+            <a href="#" class="sv-arrow-circle sv-arrow-circle--ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-bento-card sv-bento-card--square">
+        <div class="sv-bento-card__img-holder">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Phones Category" class="sv-bento-card__img">
+        </div>
+        <div class="sv-bento-card__content">
+          <div class="sv-bento-card__footer-row">
+            <div class="sv-bento-card__text">
+              <h3 class="sv-h4">Phones</h3>
+              <p class="sv-body-sm sv-muted">Sleek phones: Advanced technology, performance, and connectivity.</p>
+            </div>
+            <a href="#" class="sv-arrow-circle sv-arrow-circle--ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════════════ FEATURED PRODUCTS ═══════════════════════════════════════ -->
+<!--   <section class="sv-section sv-products-section" id="products">
+    <div class="container">
+      <div class="sv-section__header">
+        <span class="sv-eyebrow">Top Sellers</span>
+        <h2 class="sv-h2">Most Ordered Products</h2>
+        <p class="sv-body-lg sv-muted">High-volume, top-rated products from verified suppliers — consistently in demand.</p>
+      </div>
+
+      <div class="sv-products-filter" id="productFilter">
+        <button class="sv-filter-btn sv-filter-btn--active" data-filter="all">All Products</button>
+        <button class="sv-filter-btn" data-filter="electronics">Electronics</button>
+        <button class="sv-filter-btn" data-filter="packaging">Packaging</button>
+        <button class="sv-filter-btn" data-filter="industrial">Industrial</button>
+        <button class="sv-filter-btn" data-filter="office">Office</button>
+      </div>
+
+      <div class="sv-products-grid" id="productsGrid">
+        <div class="sv-product-card" data-category="electronics">
+          <div class="sv-product-card__img sv-product-card__img--1">
+            <span class="sv-product-card__rank">#1</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Electronics</span>
+              <div class="sv-product-card__rating">★★★★★ <span class="sv-caption sv-muted">(842)</span></div>
+            </div>
+            <h4 class="sv-h5">USB-C Fast Charging Cables (Bulk)</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$1.20<small>/unit</small></span>
+              <span class="sv-product-moq">MOQ: 500</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--primary sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="sv-product-card" data-category="packaging">
+          <div class="sv-product-card__img sv-product-card__img--2">
+            <span class="sv-product-card__rank">#2</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Packaging</span>
+              <div class="sv-product-card__rating">★★★★☆ <span class="sv-caption sv-muted">(614)</span></div>
+            </div>
+            <h4 class="sv-h5">Bubble Wrap Roll 100m (Industrial)</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$18<small>/roll</small></span>
+              <span class="sv-product-moq">MOQ: 50</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="sv-product-card" data-category="industrial">
+          <div class="sv-product-card__img sv-product-card__img--3">
+            <span class="sv-product-card__rank">#3</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Industrial</span>
+              <div class="sv-product-card__rating">★★★★★ <span class="sv-caption sv-muted">(389)</span></div>
+            </div>
+            <h4 class="sv-h5">Industrial Work Gloves (Heavy Duty)</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$2.40<small>/pair</small></span>
+              <span class="sv-product-moq">MOQ: 200</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="sv-product-card" data-category="office">
+          <div class="sv-product-card__img sv-product-card__img--4">
+            <span class="sv-product-card__rank">#4</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Office</span>
+              <div class="sv-product-card__rating">★★★★☆ <span class="sv-caption sv-muted">(201)</span></div>
+            </div>
+            <h4 class="sv-h5">A4 Copy Paper Ream (80gsm)</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$3.80<small>/ream</small></span>
+              <span class="sv-product-moq">MOQ: 100</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="sv-product-card" data-category="electronics">
+          <div class="sv-product-card__img sv-product-card__img--5">
+            <span class="sv-product-card__rank">#5</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Electronics</span>
+              <div class="sv-product-card__rating">★★★★★ <span class="sv-caption sv-muted">(540)</span></div>
+            </div>
+            <h4 class="sv-h5">RFID Barcode Scanner (Wireless)</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$34<small>/unit</small></span>
+              <span class="sv-product-moq">MOQ: 20</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="sv-product-card" data-category="packaging">
+          <div class="sv-product-card__img sv-product-card__img--6">
+            <span class="sv-product-card__rank">#6</span>
+          </div>
+          <div class="sv-product-card__body">
+            <div class="sv-product-card__meta">
+              <span class="sv-caption sv-muted">Packaging</span>
+              <div class="sv-product-card__rating">★★★★☆ <span class="sv-caption sv-muted">(298)</span></div>
+            </div>
+            <h4 class="sv-h5">Stretch Wrap Film Pallet Roll</h4>
+            <div class="sv-product-card__pricing">
+              <span class="sv-product-price">$22<small>/roll</small></span>
+              <span class="sv-product-moq">MOQ: 30</span>
+            </div>
+            <a href="#auth" class="sv-btn sv-btn--outline sv-btn--full sv-btn--sm" data-auth="signup">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-section__footer-cta">
+        <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--lg" data-auth="signup">View Full Catalog
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ═══════════════════════════════════════ WHY US ═══════════════════════════════════════ -->
+  <section class="sv-section sv-whyus-section" id="why-us">
+    <div class="sv-whyus-section__bg"></div>
+    <div class="container">
+      <div class="sv-section__header sv-section__header--center sv-section__header--light">
+        <span class="sv-eyebrow sv-eyebrow--white">Why Sellvro</span>
+        <h2 class="sv-h2 sv-h2--white">Commerce infrastructure<br />built for trust</h2>
+        <p class="sv-body-lg sv-muted-white">Unlike open marketplaces, Sellvro operates as a managed ecosystem — every transaction, supplier, and product governed to protect your business.</p>
+      </div>
+
+      <div class="sv-whyus-grid">
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Verified Supplier Network</h3>
+          <p class="sv-body sv-muted-white">Every supplier is vetted, approved, and continuously monitored. No unverified entities enter the ecosystem.</p>
+        </div>
+
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Wallet-Based Payments</h3>
+          <p class="sv-body sv-muted-white">Faster order processing, reduced friction, and centralized financial management through secure wallets.</p>
+        </div>
+
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Supplier Performance Mgmt</h3>
+          <p class="sv-body sv-muted-white">Real-time performance metrics ensure only reliable suppliers remain active — protecting your supply chain quality.</p>
+        </div>
+
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 10h16M4 14h16M4 18h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Streamlined Procurement</h3>
+          <p class="sv-body sv-muted-white">Search, compare, order, and track — all from a single dashboard. No negotiation overhead, no supplier chasing.</p>
+        </div>
+
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--orange">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Managed Dispute Resolution</h3>
+          <p class="sv-body sv-muted-white">Structured dispute workflows with administrative review protect buyers and suppliers throughout every transaction lifecycle.</p>
+        </div>
+
+        <div class="sv-why-card">
+          <div class="sv-why-card__icon sv-why-card__icon--blue">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="sv-h4 sv-h4--white">Scalable Infrastructure</h3>
+          <p class="sv-body sv-muted-white">From startups to enterprises — Sellvro's platform architecture grows with your business volume and complexity.</p>
+        </div>
+      </div>
+
+      <!-- WMS callout -->
+      <div class="sv-wms-callout" id="wms">
+        <div class="sv-wms-callout__content">
+          <span class="sv-badge sv-badge--orange">Add-On</span>
+          <h3 class="sv-h3 sv-h3--white">Sellvro WMS</h3>
+          <p class="sv-body sv-muted-white">Smart Warehouse Management &amp; Fulfillment Infrastructure — inventory tracking, inbound shipments, batch processing, pick/pack/ship. One platform for everything.</p>
+          <div class="sv-wms-callout__features">
+            <span>✓ Real-time inventory visibility</span>
+            <span>✓ Automated SKU &amp; barcode generation</span>
+            <span>✓ Batch fulfillment processing</span>
+            <span>✓ Integrated financial reporting</span>
+          </div>
+          <a href="#auth" class="sv-btn sv-btn--orange sv-btn--lg" data-auth="signup">Explore WMS
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="sv-wms-callout__visual">
+          <div class="sv-wms-visual">
+            <div class="sv-wms-visual__shelf">
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--1"></div>
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--2"></div>
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--3"></div>
+            </div>
+            <div class="sv-wms-visual__shelf">
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--4"></div>
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--5"></div>
+              <div class="sv-wms-visual__bin sv-wms-visual__bin--6"></div>
+            </div>
+            <div class="sv-wms-visual__label">SKU-8821 · Bin A-04</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROCESS ═══════════════════════════════════════ -->
+  <section class="sv-section sv-process-section" id="process">
+    <div class="container">
+      <div class="sv-section__header sv-section__header--center">
+        <span class="sv-eyebrow">How It Works</span>
+        <h2 class="sv-h2">From signup to sourcing<br />in 4 simple steps</h2>
+        <p class="sv-body-lg sv-muted">Sellvro removes friction from every stage of B2B procurement.</p>
+      </div>
+
+      <div class="sv-process-track">
+        <div class="sv-process-line"></div>
+
+        <div class="sv-process-step" data-step="1">
+          <div class="sv-process-step__num">01</div>
+          <div class="sv-process-step__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="sv-process-step__content">
+            <h3 class="sv-h4">Create Your Account</h3>
+            <p class="sv-body sv-muted">Register as a buyer or supplier. Provide your business details for platform verification — typically completed within 24 hours.</p>
+          </div>
+        </div>
+
+        <div class="sv-process-step" data-step="2">
+          <div class="sv-process-step__num">02</div>
+          <div class="sv-process-step__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="sv-process-step__content">
+            <h3 class="sv-h4">Discover &amp; Compare</h3>
+            <p class="sv-body sv-muted">Browse verified product catalogs. Filter by category, region, price range, and supplier rating to find exactly what your business needs.</p>
+          </div>
+        </div>
+
+        <div class="sv-process-step" data-step="3">
+          <div class="sv-process-step__num">03</div>
+          <div class="sv-process-step__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="sv-process-step__content">
+            <h3 class="sv-h4">Place Your Order</h3>
+            <p class="sv-body sv-muted">Add to cart, fund your Sellvro wallet, and place your order. Our platform manages the supplier coordination and fulfillment workflow automatically.</p>
+          </div>
+        </div>
+
+        <div class="sv-process-step" data-step="4">
+          <div class="sv-process-step__num">04</div>
+          <div class="sv-process-step__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="sv-process-step__content">
+            <h3 class="sv-h4">Track &amp; Receive</h3>
+            <p class="sv-body sv-muted">Monitor order status in real time from your dashboard. Get notified at every stage until your goods are delivered and confirmed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TESTIMONIALS ═══════════════════════════════════════ -->
+  <section class="sv-section sv-testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="sv-section__header sv-section__header--center">
+        <span class="sv-eyebrow">Testimonials</span>
+        <h2 class="sv-h2">Trusted by businesses<br />across Pakistan</h2>
+        <div class="sv-rating-summary">
+          <div class="sv-rating-stars">★★★★★</div>
+          <span class="sv-body-sm sv-muted">4.9 / 5 from 1,200+ reviews</span>
+        </div>
+      </div>
+
+      <div class="sv-testimonials-carousel" id="testimonialsCarousel">
+        <div class="sv-testimonials-track" id="testimonialsTrack">
+          <div class="sv-testimonial-card sv-testimonial-card--featured">
+            <div class="sv-testimonial-card__quote-mark">"</div>
+            <p class="sv-testimonial-card__text">Sellvro has transformed how we source. Before, we spent weeks verifying suppliers — now it's done before we even reach out. The platform's governance model is exactly what B2B needed in this region.</p>
+            <div class="sv-testimonial-card__author">
+              <div class="sv-avatar-placeholder sv-avatar-placeholder--orange">OM</div>
+              <div>
+                <span class="sv-testimonial-card__name">Omar Mirza</span>
+                <span class="sv-caption sv-muted">Head of Procurement · AlphaTech Industries</span>
+              </div>
+            </div>
+            <div class="sv-testimonial-card__rating">★★★★★</div>
+          </div>
+
+          <div class="sv-testimonial-card">
+            <div class="sv-testimonial-card__quote-mark">"</div>
+            <p class="sv-testimonial-card__text">The wallet system makes payments so much cleaner. We process 50+ orders a week and the financial tracking dashboard alone has saved us hours of reconciliation work.</p>
+            <div class="sv-testimonial-card__author">
+              <div class="sv-avatar-placeholder sv-avatar-placeholder--blue">FA</div>
+              <div>
+                <span class="sv-testimonial-card__name">Fatima Ansari</span>
+                <span class="sv-caption sv-muted">COO · SwiftRetail Group</span>
+              </div>
+            </div>
+            <div class="sv-testimonial-card__rating">★★★★★</div>
+          </div>
+
+          <div class="sv-testimonial-card">
+            <div class="sv-testimonial-card__quote-mark">"</div>
+            <p class="sv-testimonial-card__text">As a supplier, getting on Sellvro opened doors I couldn't open on my own. The platform manages the buyer relationships professionally — I focus purely on supply quality.</p>
+            <div class="sv-testimonial-card__author">
+              <div class="sv-avatar-placeholder sv-avatar-placeholder--dark">KH</div>
+              <div>
+                <span class="sv-testimonial-card__name">Kamran Hussain</span>
+                <span class="sv-caption sv-muted">Owner · PakCargo Supplies</span>
+              </div>
+            </div>
+            <div class="sv-testimonial-card__rating">★★★★★</div>
+          </div>
+
+          <div class="sv-testimonial-card">
+            <div class="sv-testimonial-card__quote-mark">"</div>
+            <p class="sv-testimonial-card__text">Dispute resolution used to be a nightmare in B2B. Sellvro's structured process resolved our last issue in 3 days — completely transparent, completely fair.</p>
+            <div class="sv-testimonial-card__author">
+              <div class="sv-avatar-placeholder sv-avatar-placeholder--orange">RA</div>
+              <div>
+                <span class="sv-testimonial-card__name">Rania Akbar</span>
+                <span class="sv-caption sv-muted">Director · NovaTrade Ltd.</span>
+              </div>
+            </div>
+            <div class="sv-testimonial-card__rating">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sv-carousel-controls">
+        <button class="sv-carousel-btn" id="carouselPrev" aria-label="Previous">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M10 4L6 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="sv-carousel-dots" id="carouselDots"></div>
+        <button class="sv-carousel-btn" id="carouselNext" aria-label="Next">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ AUTH ═══════════════════════════════════════ -->
+  <section class="sv-section sv-auth-section" id="auth">
+    <div class="container">
+      <div class="sv-auth-wrapper">
+        <div class="sv-auth-copy">
+          <span class="sv-eyebrow">Join Sellvro</span>
+          <h2 class="sv-h2">Start sourcing smarter today</h2>
+          <p class="sv-body-lg sv-muted">Join thousands of businesses already sourcing through Sellvro's managed B2B marketplace. Setup takes under 5 minutes.</p>
+          <ul class="sv-auth-features">
+            <li><span class="sv-check">✓</span> Free to register &amp; browse</li>
+            <li><span class="sv-check">✓</span> Access 12,000+ verified products</li>
+            <li><span class="sv-check">✓</span> Dedicated account manager</li>
+            <li><span class="sv-check">✓</span> Secure wallet payments</li>
+          </ul>
+        </div>
+
+        <div class="sv-auth-card">
+          <div class="sv-auth-tabs">
+            <button class="sv-auth-tab sv-auth-tab--active" id="tabSignup" data-tab="signup">Create Account</button>
+            <button class="sv-auth-tab" id="tabLogin" data-tab="login">Log In</button>
+          </div>
+
+          <!-- Signup Form -->
+          <div class="sv-auth-form" id="formSignup">
+            <div class="sv-form-row">
+              <div class="sv-form-group">
+                <label class="sv-label" for="signupFirstName">First Name</label>
+                <input type="text" class="sv-input" id="signupFirstName" placeholder="Ahmed" />
+              </div>
+              <div class="sv-form-group">
+                <label class="sv-label" for="signupLastName">Last Name</label>
+                <input type="text" class="sv-input" id="signupLastName" placeholder="Khan" />
+              </div>
+            </div>
+            <div class="sv-form-group">
+              <label class="sv-label" for="signupEmail">Business Email</label>
+              <input type="email" class="sv-input" id="signupEmail" placeholder="ahmed@company.com" />
+            </div>
+            <div class="sv-form-group">
+              <label class="sv-label" for="signupCompany">Company Name</label>
+              <input type="text" class="sv-input" id="signupCompany" placeholder="AlphaGoods Ltd." />
+            </div>
+            <div class="sv-form-group">
+              <label class="sv-label" for="signupRole">I am a</label>
+              <select class="sv-input sv-select" id="signupRole">
+                <option value="">Select role…</option>
+                <option value="buyer">Business Buyer</option>
+                <option value="supplier">Supplier</option>
+              </select>
+            </div>
+            <div class="sv-form-group">
+              <label class="sv-label" for="signupPassword">Password</label>
+              <div class="sv-input-wrap">
+                <input type="password" class="sv-input" id="signupPassword" placeholder="Create a strong password" />
+                <button class="sv-input-toggle" id="toggleSignupPass" type="button">👁</button>
+              </div>
+            </div>
+            <div class="sv-form-check">
+              <input type="checkbox" id="signupTerms" class="sv-checkbox" />
+              <label for="signupTerms" class="sv-caption sv-muted">I agree to Sellvro's <a href="#" class="sv-link">Terms of Service</a> and <a href="#" class="sv-link">Privacy Policy</a></label>
+            </div>
+            <button class="sv-btn sv-btn--primary sv-btn--full sv-btn--lg" id="signupSubmit" type="button">Create Free Account</button>
+            <div class="sv-auth-divider"><span>or</span></div>
+            <button class="sv-btn sv-btn--social sv-btn--full" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Continue with Google
+            </button>
+          </div>
+
+          <!-- Login Form -->
+          <div class="sv-auth-form sv-auth-form--hidden" id="formLogin">
+            <div class="sv-form-group">
+              <label class="sv-label" for="loginEmail">Email Address</label>
+              <input type="email" class="sv-input" id="loginEmail" placeholder="your@company.com" />
+            </div>
+            <div class="sv-form-group">
+              <label class="sv-label" for="loginPassword">Password</label>
+              <div class="sv-input-wrap">
+                <input type="password" class="sv-input" id="loginPassword" placeholder="Enter your password" />
+                <button class="sv-input-toggle" id="toggleLoginPass" type="button">👁</button>
+              </div>
+            </div>
+            <div class="sv-form-row sv-form-row--between">
+              <div class="sv-form-check">
+                <input type="checkbox" id="rememberMe" class="sv-checkbox" />
+                <label for="rememberMe" class="sv-caption sv-muted">Remember me</label>
+              </div>
+              <a href="#" class="sv-link sv-caption">Forgot password?</a>
+            </div>
+            <button class="sv-btn sv-btn--primary sv-btn--full sv-btn--lg" id="loginSubmit" type="button">Log In</button>
+            <div class="sv-auth-divider"><span>or</span></div>
+            <button class="sv-btn sv-btn--social sv-btn--full" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Continue with Google
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+  <footer class="sv-footer" id="footer">
+    <div class="container">
+      <div class="sv-footer__top">
+        <div class="sv-footer__brand">
+          <a href="#" class="sv-nav__logo sv-footer__logo">
+            <span class="sv-nav__logo-mark">S</span>
+            <span class="sv-nav__logo-text">Sellvro</span>
+          </a>
+          <p class="sv-body sv-muted">The trusted B2B commerce infrastructure for modern businesses. Managed marketplace + WMS — in one platform.</p>
+          <div class="sv-footer__social">
+            <a href="#" class="sv-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="sv-social-btn" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="sv-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sv-footer__nav-group">
+          <h4 class="sv-footer__nav-title">Marketplace</h4>
+          <ul class="sv-footer__nav-list">
+            <li><a href="#">Browse Products</a></li>
+            <li><a href="#">Supplier Directory</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Daily Deals</a></li>
+            <li><a href="#">Bulk Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="sv-footer__nav-group">
+          <h4 class="sv-footer__nav-title">WMS Platform</h4>
+          <ul class="sv-footer__nav-list">
+            <li><a href="#">Inventory Management</a></li>
+            <li><a href="#">Shipment Processing</a></li>
+            <li><a href="#">Fulfillment Workflows</a></li>
+            <li><a href="#">SKU &amp; Barcode System</a></li>
+            <li><a href="#">Financial Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="sv-footer__nav-group">
+          <h4 class="sv-footer__nav-title">Company</h4>
+          <ul class="sv-footer__nav-list">
+            <li><a href="#">About Sellvro</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog &amp; Insights</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="sv-footer__nav-group">
+          <h4 class="sv-footer__nav-title">Support</h4>
+          <ul class="sv-footer__nav-list">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Dispute Resolution</a></li>
+            <li><a href="#">API Documentation</a></li>
+            <li><a href="#">System Status</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sv-footer__bottom">
+        <p class="sv-caption sv-muted">© 2025 Sellvro Technologies. All rights reserved.</p>
+        <div class="sv-footer__legal">
+          <a href="#" class="sv-caption sv-muted">Privacy Policy</a>
+          <a href="#" class="sv-caption sv-muted">Terms of Service</a>
+          <a href="#" class="sv-caption sv-muted">Cookie Policy</a>
+        </div>
+        <p class="sv-caption sv-muted">Made in Pakistan 🇵🇰</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="sv-toast" id="svToast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
