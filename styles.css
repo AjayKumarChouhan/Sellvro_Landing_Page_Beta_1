@@ -708,7 +708,7 @@ input, select { font-family: inherit; outline: none; border: none; background: n
   gap: var(--space-3);
   flex-wrap: wrap;
 }
-.sv-hero__stat { display: flex; flex-direction: column; gap: var(--space-1); }
+.sv-hero__stat { display: flex; flex-direction: column; gap: var(--space-1);}
 .sv-hero__stat-num {
   font-size: var(--text-md);
   font-weight: var(--fw-extrabold);
