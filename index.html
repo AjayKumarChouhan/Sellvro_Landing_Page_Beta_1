@@ -21,15 +21,21 @@
       </a>
 
       <div class="sv-nav__search" id="searchWrapper">
-        <svg class="sv-nav__search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M15 15L13.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <input type="text" class="sv-nav__search-input" placeholder="Search products, suppliers…" id="navSearch" />
-        <kbd class="sv-nav__search-kbd">⌘K</kbd>
-      </div>
+  <div class="sv-nav__search-field-group">
+    <svg class="sv-nav__search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+      <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <input type="text" class="sv-nav__search-input" placeholder="Search for products" id="navSearch" />
+  </div>
+
+  <button type="submit" class="sv-nav__search-btn">
+    <span>Search</span>
+  </button>
+</div>
 
       <ul class="sv-nav__links">
+        <!-- <li><a href="#marketplace">Products</a></li> -->
         <li><a href="#marketplace">Marketplace</a></li>
         <li><a href="#wms">WMS</a></li>
         <li><a href="#why-us">Why Sellvro</a></li>
@@ -37,8 +43,8 @@
       </ul>
 
       <div class="sv-nav__actions">
-        <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--sm" data-auth="login">Log In</a>
-        <a href="#auth" class="sv-btn sv-btn--primary sv-btn--sm" data-auth="signup">Get Started</a>
+        <!-- <a href="#auth" class="sv-btn sv-btn--ghost sv-btn--sm" data-auth="login">Log In</a> -->
+        <a href="#auth" class="sv-btn sv-btn--primary sv-btn--sm" data-auth="signup">Log In or Sign Up</a>
       </div>
 
       <button class="sv-nav__burger" id="navBurger" aria-label="Toggle menu">
@@ -88,7 +94,7 @@
           Start for Free
           <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#video" class="sv-btn sv-btn--ghost sv-btn--lg sv-btn--play">
+        <a href="#video" class="sv-btn sv-btn--ghost sv-btn--lg-v sv-btn--play">
           <span class="sv-btn__play-ring">
             <svg viewBox="0 0 20 20" fill="none"><polygon points="7,5 15,10 7,15" fill="currentColor"/></svg>
           </span>
@@ -952,7 +958,7 @@
       <div class="sv-footer__top">
         <div class="sv-footer__brand">
           <a href="#" class="sv-nav__logo">
-        <img width="120px" src="images\logo_White.png" alt="Sellvro Logo" />
+        <img width="120px" src="images/logo_white.png" alt="Sellvro Logo" />
       </a>
           <p class="sv-body sv-muted">The trusted B2B commerce infrastructure for modern businesses. Managed marketplace + WMS — in one platform.</p>
           <div class="sv-footer__social">
@@ -1014,13 +1020,13 @@
       </div>
 
       <div class="sv-footer__bottom">
-        <p class="sv-caption sv-muted">© 2025 Sellvro Technologies. All rights reserved.</p>
+        <p class="sv-caption sv-muted">© 2026 Sellvro. All rights reserved.</p>
         <div class="sv-footer__legal">
           <a href="#" class="sv-caption sv-muted">Privacy Policy</a>
           <a href="#" class="sv-caption sv-muted">Terms of Service</a>
           <a href="#" class="sv-caption sv-muted">Cookie Policy</a>
         </div>
-        <p class="sv-caption sv-muted">Made in Pakistan 🇵🇰</p>
+        <p class="sv-caption sv-muted">Developed & Design by HayViral</p>
       </div>
     </div>
   </footer>
