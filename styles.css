@@ -550,8 +550,8 @@ input, select { font-family: inherit; outline: none; border: none; background: n
 .sv-nav__search-btn span {
   color: var(--color-white);
   font-size: var(--text-sm);
-  font-weight: var(--fw-regular); /* Bold typography setting matching the image */
-  letter-spacing: -0.2px;
+  font-weight: var(--fw-semibold); /* Bold typography setting matching the image */
+  letter-spacing: var(--ls-wider); /* Slightly wider letter spacing for the button text to match the mockup */
 }
 
 .sv-nav__search-btn:hover {
@@ -748,7 +748,7 @@ input, select { font-family: inherit; outline: none; border: none; background: n
   background: var(--color-white);
   border: var(--border);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-2xl);
+  box-shadow: var(--shadow-md);
   overflow: hidden;
   width: 100%;
   height: 380px;
@@ -773,17 +773,18 @@ input, select { font-family: inherit; outline: none; border: none; background: n
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  box-shadow: var(--shadow-xl);
   white-space: nowrap;
 }
 .sv-hero__float--order {
   bottom: -16px;
   left: -32px;
+  box-shadow: var(--shadow-xl);
   animation: float-a 4s ease-in-out infinite;
 }
 .sv-hero__float--supplier {
   top: -16px;
   right: -16px;
+  box-shadow: var(--shadow-md);
   animation: float-b 4s ease-in-out 2s infinite;
 }
 .sv-float__icon { font-size: var(--text-lg); }
@@ -2578,11 +2579,14 @@ input, select { font-family: inherit; outline: none; border: none; background: n
     flex-direction: column;
   } */
 
-  .sv-hero__badge{
-    display: flex;
-    justify-content: center;
-    max-width: fit-content;
-    justify-self: center;
+  .sv-hero__badge {
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+        
+        /* Forces centering on Safari by pushing equal space on both sides */
+        margin-left: auto !important;
+        margin-right: auto !important;
   }
 }
 
